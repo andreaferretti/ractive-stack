@@ -1,0 +1,8 @@
+<input type="text" value={{ query }} />
+<ul>
+  {{# entries }}
+    {{# filter(name, query) }}
+      <li>{{ name }}: {{ population }}</li>
+    {{/ end if }}
+  {{/ entries }}
+</ul>
