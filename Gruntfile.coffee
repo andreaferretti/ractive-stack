@@ -78,6 +78,7 @@ module.exports = (grunt) ->
       tmp: ['<%= config.tmp %>']
       tmp_dist: ['<%= config.tmp_dist %>']
       components: ['<%= config.dist %>/components']
+      templates: ['<%= config.dist %>/templates']
 
     coffee:
       options:
@@ -115,7 +116,7 @@ module.exports = (grunt) ->
         ]
       dist:
         files: [
-          { expand: true, cwd: '<%= config.tmp %>/', src: ['**/*.js', '**/*.css'], dest: '<%= config.tmp_dist %>/' }
+          { expand: true, cwd: '<%= config.tmp %>/', src: ['**/*.{js,css,html}'], dest: '<%= config.tmp_dist %>/' }
           { expand: true, cwd: '<%= config.app %>/', src: ['**'], dest: '<%= config.tmp_dist %>/' }
         ]
       require:
@@ -165,6 +166,7 @@ module.exports = (grunt) ->
     'clean:tmp'
     'clean:tmp_dist'
     'clean:components'
+    'clean:templates'
   ])
 
   grunt.registerTask('default', ['build'])
