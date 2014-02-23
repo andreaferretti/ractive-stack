@@ -11,6 +11,7 @@ requirejs.config
     'signals':      '../components/js-signals/dist/signals'
     'crossroads':   '../components/crossroads.js/dist/crossroads'
     'hasher':       '../components/hasher/dist/js/hasher'
+    #'catiline':     '../components/catiline/dist/catiline'
     #'moment':       '../components/momentjs/moment'
     #'paths':        '../components/paths-js/dist/amd'
     #'io':           '../components/socket.io-client/dist/socket.io'

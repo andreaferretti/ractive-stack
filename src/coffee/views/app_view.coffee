@@ -10,7 +10,7 @@ define [
     { name: 'Argentina', population: 40117096 },
     { name: 'Japan', population: 127290000 }
   ]
-  
+
   class App
     initialize: ->
       ractive = new Ractive

@@ -19,6 +19,7 @@ Finally, there are a few modules that may be useful, but possibly not for each t
 * Moment.js to handle dates and times
 * Socket.io to support cross-browser websockets
 * Amanda for object schema validation
+* Catiline for multi-threading support via Web Workers
 * Paths.js to generate SVG graphics
 
 All of these libraries handle orthogonal concerns and integrate seamlessly with each other.
